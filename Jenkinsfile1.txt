@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git scm') {
+            steps {
+                echo 'this is code fetch stages'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'this is build stages'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'this is testing stages'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'this is deploy stages'
+            }
+        }
+    }
+}
